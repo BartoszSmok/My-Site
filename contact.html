@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <nav class="float darkblue">
+    <ul class="nav">
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li class="contact"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container "><img class="cover" src="img/undraw.png"></div>
+  <div class="container2 blue">
+    <h1>You can contact me via form below.</h1>
+    <form onsubmit="return false">
+      <input type="text" placeholder="Enter your name" id="lastName">
+      <br><br>
+      <input type="email" placeholder="Enter your email" id="email">
+      <br><br>
+      <span>What is your question?</span>
+      <br>
+      <textarea id="question" rows="5" cols="70"></textarea>
+      <br><br>
+      <button onclick="sendMessage();">Send Message</button>
+    </form>
+  </div>
+
+  <footer class="darkblue">Design by Bartosz Smok</footer>
+</body>
+
+</html>
