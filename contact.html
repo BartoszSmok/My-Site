@@ -4,6 +4,7 @@
 <head>
   <title>Contact</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="form.js"></script>
 </head>
 
 <body>
@@ -15,22 +16,27 @@
     </ul>
   </nav>
   <div class="container "><img class="cover" src="img/undraw.png"></div>
+
   <div class="container2 blue">
+
     <h1>You can contact me via form below.</h1>
-    <form onsubmit="return false">
-      <input type="text" placeholder="Enter your name" id="lastName">
+
+    <form name="myform" method="post" action="" onSubmit="return validateform()">
+      <input type="text"  name="name" placeholder="Enter your name" id="lastName">
       <br><br>
-      <input type="email" placeholder="Enter your email" id="email">
+      <input type="email" name="mail" placeholder="Enter your email" id="email">
       <br><br>
       <span>What is your question?</span>
       <br>
-      <textarea id="question" rows="5" cols="70"></textarea>
+      <textarea name="message" id="question" rows="5" cols="70"></textarea>
       <br><br>
-      <button onclick="sendMessage();">Send Message</button>
+      <button onclick="validateform();">Send Message</button>
     </form>
+
   </div>
 
   <footer class="darkblue">Design by Bartosz Smok</footer>
+
 </body>
 
 </html>
